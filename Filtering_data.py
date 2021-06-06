@@ -75,7 +75,6 @@ DATA = [
 def main():
 
     # List comprehension solution: 
-
     all_python_devs = [worker["name"] for worker in DATA if worker["language"] == 'python']
     all_platzi_workers = [worker["name"] for worker in DATA if worker["organization"] == "Platzi"]
     adults = [worker["name"] for worker in DATA if worker["age"] > 18]
