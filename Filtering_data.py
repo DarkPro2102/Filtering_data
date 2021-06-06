@@ -87,10 +87,10 @@ def main():
     platzi_employees = list(map(lambda worker: worker["name"], platzi_employees))
     adults = list(filter(lambda worker: worker["age"] > 18,DATA))
     adults = list(map(lambda worker: worker["name"],adults))
-    old_people = list(map(lambda worker: worker | {"old": worker["age"] > 70},DATA))
+    old_people_hof = list(map(lambda worker: worker | {"old": worker["age"] > 70},DATA))
 
     #Testing printing code
-    for worker in platzi_employees:
+    for worker in old_people_hof:
         print(worker)
 
 if __name__ == '__main__':
